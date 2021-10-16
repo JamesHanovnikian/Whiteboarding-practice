@@ -9,16 +9,15 @@
 # If it is under 100, then add it to the new array.
 # Print the new array
 
-# def lownumbers(array)
-#   new_array = []
-#   i = 0
-#   while i < array.length
-#     if array[i] < 100
-#       new_array << array[i]
-#     end
-#     i = i + 1
-#   end
-#   new_array
-# end
+def lownumbers(array)
+  new_array = []
+  i = 0
+  while i < array.length
+    if array[i] < 100
+      new_array << array[i]
+    end
+    i =
+  end
+end
 
-# p lownumbers([99, 101, 88, 4, 2000, 50])
+p lownumbers([99, 101, 88, 4, 2000, 50])
