@@ -55,14 +55,38 @@
 # variable to keep track of the greatest value thus far
 # return the greatest value variable
 
-def greatestvalue(array)
-  greatest_value = array[0]
-  array.each do |number|
-    if number > greatest_value
-      greatest_value = number
-    end
-  end
-  greatest_value
-end
+# def greatestvalue(array)
+#   greatest_value = array[0]
+#   array.each do |number|
+#     if number > greatest_value
+#       greatest_value = number
+#     end
+#   end
+#   greatest_value
+# end
 
-p greatestvalue([5, 17, -4, 20, 12])
+# p greatestvalue([5, 17, -4, 20, 12])
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+# while loop
+# have a variable for product
+# multiple product variable by each index of the array
+# return the product variable
+
+# def products(array)
+#   product = 1
+#   i = 0
+#   while i < array.length
+#     product = product * array[i]
+#     i += 1
+#   end
+#   product
+# end
+
+# p products([1, 2, 3, 4])
