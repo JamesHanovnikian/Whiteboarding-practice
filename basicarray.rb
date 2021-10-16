@@ -45,3 +45,24 @@
 # end
 
 # p double([4, 2, 5, 99, -4])
+
+# Write a function that returns the greatest value from an array of numbers.
+
+# Input: [5, 17, -4, 20, 12]
+# Output: 20
+
+# each loop
+# variable to keep track of the greatest value thus far
+# return the greatest value variable
+
+def greatestvalue(array)
+  greatest_value = array[0]
+  array.each do |number|
+    if number > greatest_value
+      greatest_value = number
+    end
+  end
+  greatest_value
+end
+
+p greatestvalue([5, 17, -4, 20, 12])
