@@ -90,3 +90,25 @@
 # end
 
 # p products([1, 2, 3, 4])
+
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+# make a variable to hold the new array
+# set value for i to be array length
+# while loop going backwards while i > 0
+# on each iteration, push that to the new array
+
+# def reverse(array)
+#   new_array = []
+#   i = array.length - 1
+#   while i >= 0
+#     new_array << array[i]
+#     i -= 1
+#   end
+#   new_array
+# end
+
+# p reverse([1, 2, 3, 4, 5])
