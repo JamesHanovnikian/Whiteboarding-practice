@@ -152,3 +152,14 @@
 # end
 
 # p skipit([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
+
+# Write a function that returns the sum of all numbers in a given array.
+
+# NOTE: Do not use any built-in language functions that do this automatically for you.
+
+# Input: [1, 2, 3, 4]
+# Output: 10
+
+# Explanation: (1 + 2 + 3 + 4) = 10
+
+
