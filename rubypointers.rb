@@ -39,20 +39,56 @@
 # If index1 and index2 are NOT equal then
 #   add them up and push it to the new array
 
-def combo_letters(array)
-  new_array = []
-  i1 = 0
-  while i1 < array.length
-    i2 = 0
-    while i2 < array.length
-      if i1 != i2
-        new_array << array[i1] + array[i2]
-      end
-      i2 += 1
-    end
-    i1 += 1
-  end
-  new_array
-end
+# def combo_letters(array)
+#   new_array = []
+#   i1 = 0
+#   while i1 < array.length
+#     i2 = 0
+#     while i2 < array.length
+#       if i1 != i2
+#         new_array << array[i1] + array[i2]
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   new_array
+# end
 
-p combo_letters(["a", "b", "c", "d"])
+# p combo_letters(["a", "b", "c", "d"])
+
+# Find the largest product of any two numbers within a given array.
+
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+
+# Make a variable to hold the largest product so far
+# Make an index variable
+# While loop to iterate through the array
+# Make a 2nd index
+# 2nd while loop to iterate what to multiply with
+# Multiply first index with second index
+# If it is bigger than biggest product so far, change the variable
+# Return
+
+# def largest_product(array)
+#   highest_product = array[0] * array[1]
+#   product = 1
+#   i1 = 0
+#   while i1 < array.length
+#     i2 = 0
+#     while i2 < array.length
+#       if i1 != i2
+#         product = array[i1] * array[i2]
+#         if product > highest_product
+#           highest_product = product
+#         end
+#       end
+#       i2 += 1
+#     end
+#     i1 += 1
+#   end
+#   highest_product
+# end
+
+# p largest_product([5, -2, 1, -9, -7, 2, 6])
