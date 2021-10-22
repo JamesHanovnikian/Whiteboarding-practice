@@ -51,29 +51,72 @@
 
 # Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
 
-# Input: [
-# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
-# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
-# ]
-
-# Output: [
-# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
-# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
-# ]
-
 # make a variable for an array that only contains higher liked content
 # each loop to go t
 
-def highest_liked(array)
-  array.each do |post|
-  end
-end
+# def highest_liked(array)
+#   array.each do ||
+# end
 
-p highest_liked([
-    { title: "Me Eating Pizza", submitted_by: "Joelle P.", likes: 1549 },
-    { title: "i never knew how cool i was until now", submitted_by: "Lyndon Johnson", likes: 3 },
-    { title: "best selfie evar!!!", submitted_by: "Patti Q.", likes: 1092 },
-    { title: "Mondays are the worst", submitted_by: "Aunty Em", likes: 644 },
-  ])
+# p highest_liked([
+#   {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+#   {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+#   {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+#   {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+#   ])
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
+
+# Given a DNA strand, return its RNA complement (per RNA transcription).
+
+# Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+# Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+# G becomes C
+# C becomes G
+# T becomes A
+# A becomes U
+
+# So based on all this, here's a sample input/output:
+
+# Input: 'ACGTGGTCTTAA'
+# Output: 'UGCACCAGAAUU'
+
+# Input: 'GCTA'
+# Output: 'CGAU'
+
+# while loop to loop through the string
+# make a new empty string
+# on each iteration check to see if it is a certain letter
+# add that to the new string
+# return the new string
+
+# def rna_transcriber(string)
+#   rna = ""
+#   i = 0
+#   while i < string.length
+#     if string[i].upcase == "G"
+#       rna = rna + "C"
+#     end
+#     if string[i].upcase == "C"
+#       rna = rna + "G"
+#     end
+#     if string[i].upcase == "T"
+#       rna = rna + "A"
+#     end
+#     if string[i].upcase == "A"
+#       rna = rna + "U"
+#     end
+#     i += 1
+#   end
+#   rna
+# end
+
+# p rna_transcriber("ACGTGGTCTTAa")

@@ -139,17 +139,63 @@
 
 # p sum_10([2, 5, 3, 1, 0, 7, 11])
 
+# Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
 
-Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
+# A "100 Coolio Array" meets the following criteria:
 
-A "100 Coolio Array" meets the following criteria:
+# Its first and last numbers add up to 100,
+# Its second and second-to-last numbers add up to 100,
+# Its third and third-to-last numbers add up to 100,
+# and so on and so forth.
 
-Its first and last numbers add up to 100,
-Its second and second-to-last numbers add up to 100,
-Its third and third-to-last numbers add up to 100,
-and so on and so forth.
+# Here are examples of 100 Coolio Arrays:
 
-Here are examples of 100 Coolio Arrays:
+# [1, 2, 3, 97, 98, 99]
+# [90, 20, 70, 100, 30, 80, 10]
 
-[1, 2, 3, 97, 98, 99]
-[90, 20, 70, 100, 30, 80, 10]
+# Make a variable to hold how far it is from start or end of the array
+
+# array[-x]
+# array[x-1]
+
+# Increment that once each iteration through the array
+# while loop ?
+
+# Given an array of hashes that represent a list of social media posts, return a new array that only contains the posts that have at least 1000 likes.
+
+# Input: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+# {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+# ]
+
+# Output: [
+# {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+# {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},]
+
+# Input: [{title: "hello", submitted_by: "James", likes: 900},
+# {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+# {title: "hi", submitted_by:"Me", likes: 1100},
+# Output: {title: "hi", submitted_by:"Me", likes: 1100}]
+
+# each loop to go through each social media post
+# make an empty array variable
+# access the key likes post[:likes]
+# if statement to see whether it is over 1000 or under
+#   shovel into a new array
+# Return that new array
+
+# def liked_posts(posts)
+#   new_array = []
+#   posts.each do |post|
+#     if post["likes"] > 1000
+#       new_array << post
+#     end
+#   end
+#   return new_array
+# end
+
+# p liked_posts([{ title: "hello", submitted_by: "James", likes: 900 },
+#                { title: "i never knew how cool i was until now", submitted_by: "Lyndon Johnson", likes: 3 },
+#                { title: "hi", submitted_by: "Me", likes: 1100 }])
