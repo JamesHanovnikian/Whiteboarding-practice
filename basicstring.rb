@@ -3,22 +3,20 @@
 # Input: “abcde”
 # Output: “edcba”
 
-# while loop
-# make a variable for a new string
-# add each iteration of the original string to the new string starting at the last index
+# Input: "cat"
+# Output: "tac"
 
-def reverse_the_string(array)
-  i = array.length - 1
-  reverse_string = []
+# def reverse_string(string)
+#   new_string = ""
+#   i = string.length - 1
+#   while i >= 0
+#     new_string = new_string + string[i]
+#     i -= 1
+#   end
+#   new_string
+# end
 
-  while i > 0
-    reverse_string << array[i]
-    i -= 1
-  end
-  return reverse_string
-end
-
-puts reverse_the_string(["a", "b", "c"])
+# p reverse_string("cat")
 
 # Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
 
@@ -28,20 +26,16 @@ puts reverse_the_string(["a", "b", "c"])
 # Input: “abcdefghijklmnopqrstuvwxyz”
 # Output: false
 
-# make a variable and split everything up
-# while loop
-# use if statement to see if the current interation is a $ or not
-# If there is $ return true and break
-
-# def money_checker(string)
+# def has_dollar?(string)
+#   dollar_present = false
 #   i = 0
-#   letters = string.chars()
-#   while i < letters.length
-#     if letters[i] == "$"
-#       return true
+#   while i < string.length
+#     if string[i] == "$"
+#       dollar_present = true
 #     end
 #     i += 1
 #   end
+#   dollar_present
 # end
 
-# p money_checker(“abcdefghijklmnopqrstuvwxyz”)
+# p has_dollar?("abcdefghijklmnopqrstuvwxyz")

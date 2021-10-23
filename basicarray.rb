@@ -1,71 +1,53 @@
 # Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
 
-# Input: [99, 101, 88, 4, 2000, 50]
-# Output: [99, 88, 4, 50]
+# Input: [56, 45, 123, 109]
+# Output: [56, 45]
 
-# Make a variable holding new array
-# While loop
-# Through each iteration check to see if that index is under 100
-# If it is under 100, then add it to the new array.
-# Print the new array
+# Input: [-50, 200, 65, 99, 101]
+# Output: [-50, 65, 99]
 
-# def lownumbers(array)
+# Empty array
+
+# def is_greater_100?(array)
 #   new_array = []
 #   i = 0
 #   while i < array.length
 #     if array[i] < 100
 #       new_array << array[i]
 #     end
-#     i = i + 1
-#   end
-#   new_array
-# end
-
-# p lownumbers([99, 101, 88, 4, 2000, 50])
-
-# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
-
-# Input: [4, 2, 5, 99, -4]
-# Output: [8, 4, 10, 198, -8]y
-
-# make a new variable for new array
-# while loop
-# on each iteration multiply that index by 2.
-# Add that value to the new array
-# return new array
-
-# def double(array)
-#   new_array = []
-#   i = 0
-#   while i < array.length
-#     new_array << array[i] * 2
 #     i += 1
 #   end
 #   new_array
 # end
 
-# p double([4, 2, 5, 99, -4])
+# p is_greater_100?([56, 45, 123, 109, 99, -88])
+
+# Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
 
 # Write a function that returns the greatest value from an array of numbers.
 
-# Input: [5, 17, -4, 20, 12]
-# Output: 20
+# Input: [20, 500, 45, 66, 23]
+# Output: 500
 
-# each loop
-# variable to keep track of the greatest value thus far
-# return the greatest value variable
+# Input: [15, 12, 99]
+# Output: 99
 
-# def greatestvalue(array)
-#   greatest_value = array[0]
-#   array.each do |number|
-#     if number > greatest_value
-#       greatest_value = number
+# Input: [44, -99, -23]
+# Output: 44
+
+# def greatest_value(array)
+#   current_greatest = 500
+#   i = 2
+#   while i < array.length
+#     if array[i] > current_greatest
+#       current_greatest = array[i]
 #     end
+#     i += 1
 #   end
-#   greatest_value
+#   current_greatest
 # end
 
-# p greatestvalue([5, 17, -4, 20, 12])
+# p greatest_value([20, 500, 45, 66, 23])
 
 # Write a function that accepts an array of numbers and returns the product of all the numbers.
 
@@ -127,31 +109,28 @@
 
 # The new array should always start with the first number from the original array. The next number that should be included depends on what the first number is. The first number dictates how many spaces to the right the computer should move to pick the next number. For example, if the first number is 2, then the next number that the computer should select would be two spaces to the right. This number gets added to the new array. If this next number happens to be a 4, then the next number after that is the one four spaces to the right. And so on and so forth until the end of the array is reached.
 
+# Input: [1, 3, 2, 3, 1, 2, 1, 2]
+#Output: [1, 3, 1, 2, 2]
+
+# def skipit(array)
+#   index = 4
+#   new_array = []
+#   while index < array.length
+#     new_array << array[index]
+#     index = array[index] + index
+#   end
+#   new_array
+# end
+
+# p skipit([1, 3, 2, 3, 1, 2, 1, 2])
+
+# new_array = [1, 3, 1, 2, 2]
+
 # Input:
 # [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
 
 # Output:
 # [2, 3, 1, 2, 2, 1, 5, 2, 2]
-
-# while loop
-# set a new array variable
-# set a variable for spaces
-# each iteration on array's index changes the spaces_between variable
-# add spaces_between to i
-# push the current index to the new array
-
-# def skipit(array)
-#   new_array = []
-#   i = 0
-#   while i < array.length
-#     spaces_between = array[i]
-#     new_array << array[i]
-#     i += spaces_between
-#   end
-#   new_array
-# end
-
-# p skipit([2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2])
 
 # Write a function that returns the sum of all numbers in a given array.
 
@@ -161,5 +140,3 @@
 # Output: 10
 
 # Explanation: (1 + 2 + 3 + 4) = 10
-
-
