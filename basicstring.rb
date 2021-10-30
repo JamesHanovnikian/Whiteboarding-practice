@@ -39,3 +39,24 @@
 # end
 
 # p has_dollar?("abcdefghijklmnopqrstuvwxyz")
+
+# Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+#   Input: “hello, how are your porcupines today?”
+#   Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+# def capitalize(string)
+#   new_string = ""
+#   i = 0
+#   while i < string.length
+#     if i % 2 == 0
+#       new_string = new_string + string[i]
+#     else
+#       new_string = new_string + string[i].upcase
+#     end
+#     i += 1
+#   end
+#   new_string
+# end
+
+# p capitalize("hello, how are your porcupines today?")
