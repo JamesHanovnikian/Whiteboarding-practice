@@ -60,3 +60,26 @@
 # end
 
 # p capitalize("hello, how are your porcupines today?")
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+# while loop
+# variable called previous_letter holding the last letter
+
+# def duplicate_letter(string)
+#   i = 0
+#   previous_letter = ""
+#   while i < string.length
+#     if previous_letter == string[i]
+#       return previous_letter
+#       break
+#     end
+#     previous_letter = string[i]
+#     i += 1
+#   end
+# end
+
+# p duplicate_letter("abcdefghhijkkloooop")
