@@ -36,3 +36,53 @@
 # end
 
 # p fizzbuzz(99)
+
+# Write a function that gives the Nth number of the Fibonacci Sequence. The Fibonacci sequence begins with 0 and 1, and every number thereafter is the sum of the previous two numbers. So the sequence goes like this:
+
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, and so on until infinity...
+# 1  2   3  4 5    6  7  8  9
+# Input: 9
+# Output: 21 (as this is the 9th number of the Fibonacci Sequence)
+
+# def fib(n)
+#   if n == 1
+#     return 1
+#   end
+#   if n == 2
+#     return 1
+#   end
+#   if n > 2
+#     i = 3
+#     while i <= n
+
+#       i += 1
+#     end
+#   end
+# end
+
+# p fib(1)
+
+# Given a year, report if it is a leap year.
+
+# The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+# on every year that is evenly divisible by 4
+# except every year that is evenly divisible by 100
+# unless the year is also evenly divisible by 400
+# For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+
+# If your language provides a method in the standard library that does this look-up, pretend it doesn't exist and implement it yourself.
+
+# def leap_year?(year)
+#   if year % 100 == 0 && year % 400 == 0
+#     return true
+#   elsif year % 100 == 0
+#     return false
+#   elsif year % 4 == 0
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+# p leap_year?(2017)
