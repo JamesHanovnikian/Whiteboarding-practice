@@ -44,23 +44,26 @@
 # Input: 9
 # Output: 21 (as this is the 9th number of the Fibonacci Sequence)
 
-# def fib(n)
-#   if n == 1
-#     return 1
-#   end
-#   if n == 2
-#     return 1
-#   end
-#   if n > 2
-#     i = 3
-#     while i <= n
+def fib(n)
+  x = 1
+  y = 1
+  z = x + y
 
-#       i += 1
-#     end
-#   end
-# end
+  if n == 1
+    return x
+  end
+  if n == 2
+    return x
+  end
+  if n > 2
+    i = 3
+    while i <= n
+      i += 1
+    end
+  end
+end
 
-# p fib(1)
+p fib(1)
 
 # Given a year, report if it is a leap year.
 
