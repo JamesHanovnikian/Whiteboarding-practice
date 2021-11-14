@@ -128,18 +128,52 @@
 # 2
 # 1
 
-def collatz_conjecture(n)
-  count = 0
-  while n != 1
-    if n % 2 == 0
-      n = n / 2
-    else
-      n = (3 * n) + 1
+# def collatz_conjecture(n)
+#   count = 0
+#   while n != 1
+#     if n % 2 == 0
+#       n = n / 2
+#     else
+#       n = (3 * n) + 1
+#     end
+#     count += 1
+#   end
+#   count
+# end
+
+# p collatz_conjecture(12)
+
+# Resulting in 9 steps. So for input n = 12, the return value would be 9.
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
+# Two variables, that will start at 0 and go up to the highest number that is 3 digits.
+
+# i = 0
+# j = 0
+
+# Make a variable for the highest product palindrome
+# While loop to track one variable
+# Another while loop to track the other variable
+# Change the product to a string, and then check to see if first and last characters are the same, if so check this with highest_palindrome and update if it's bigger
+
+i = 0
+product = 1
+highest_palindrome = 9009
+while i <= 999
+  j = 0
+  while j <= 999
+    product = i * j
+    if product.to_s[0] == product.to_s[-1]
+      if product > highest_palindrome
+        highest_palindrome = product
+      end
     end
-    count += 1
+    j += 1
   end
-  count
+  i += 1
 end
 
-p collatz_conjecture(12)
-# Resulting in 9 steps. So for input n = 12, the return value would be 9.
+p highest_palindrome
