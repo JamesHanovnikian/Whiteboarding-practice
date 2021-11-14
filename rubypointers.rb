@@ -214,27 +214,46 @@
 # [1, 2, 3, 97, 98, 99]
 # [90, 20, 70, 100, 30, 80, 10]
 
-def coolio(array)
-  array_length = array.length
-  y = 0
-  z = -1
-  is_coolio = false
-  if array_length % 2 == 0
-    x = array_length / 2
-    i = 0
-    while i < x
-      if array[y] + array[z] == 100
-        is_coolio = true
-      else
-        is_coolio = false
-        break
-      end
-      y += 1
-      z = z - 1
-      i += 1
-    end
-    return is_coolio
-  end
-end
+# def coolio(array)
+#   array_length = array.length
+#   y = 0
+#   z = -1
+#   is_coolio = false
+#   if array_length % 2 == 0
+#     x = array_length / 2
+#     i = 0
+#     while i < x
+#       if array[y] + array[z] == 100
+#         is_coolio = true
+#       else
+#         is_coolio = false
+#         break
+#       end
+#       y += 1
+#       z = z - 1
+#       i += 1
+#     end
+#   else
+#     middle_index = (array.length / 2) + 1
+#   end
+#   is_coolio
+# end
 
-p coolio ([80, 50, 2, 3, 97, 98, 50, 20])
+# p coolio ([80, 50, 2, 3, 97, 98, 50, 20])
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
+
+# All given inputs are in lowercase letters a-z.
