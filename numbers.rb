@@ -159,21 +159,21 @@
 # Another while loop to track the other variable
 # Change the product to a string, and then check to see if first and last characters are the same, if so check this with highest_palindrome and update if it's bigger
 
-i = 0
-product = 1
-highest_palindrome = 9009
-while i <= 999
-  j = 0
-  while j <= 999
-    product = i * j
-    if product.to_s[0] == product.to_s[-1]
-      if product > highest_palindrome
-        highest_palindrome = product
-      end
-    end
-    j += 1
-  end
-  i += 1
-end
+# i = 0
+# product = 1
+# highest_palindrome = 9009
+# while i <= 999
+#   j = 0
+#   while j <= 999
+#     product = i * j
+#     if product.to_s[0] == product.to_s[-1]
+#       if product > highest_palindrome
+#         highest_palindrome = product
+#       end
+#     end
+#     j += 1
+#   end
+#   i += 1
+# end
 
-p highest_palindrome
+# p highest_palindrome
