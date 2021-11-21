@@ -145,19 +145,48 @@
 # {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 # ]
 
-def complete_data(posts, users)
-  user_id = 0
-  posts.each do |post|
-    user_id = post[:submitted_by]
-    user_name = users[user_id]
-    post[:submitted_by] = user_name
-  end
-  posts
-end
+# def complete_data(posts, users)
+#   user_id = 0
+#   posts.each do |post|
+#     user_id = post[:submitted_by]
+#     user_name = users[user_id]
+#     post[:submitted_by] = user_name
+#   end
+#   posts
+# end
 
-p complete_data([
-    { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
-    { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
-    { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
-    { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
-  ], { 403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q." })
+# p complete_data([
+#     { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+#     { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+#     { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+#     { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+#   ], { 403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q." })
+
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+# Do not use any built-in sort methods.
+
+# Input: “silent”, “listen”
+# Output: true
+
+# Input: “frog”, “bear”
+# Output: false
+
+# def anagram(string1, string2)
+#   contains_letters = {}
+#   i = 0
+#   while i < string1.length
+#     letter = string1[i]
+#     if contains_letters[letter] == nil
+#       contains_letters[letter] = 0
+#     end
+#     contains_letters[letter] += 1
+#     i += 1
+#   end
+#   contains_letters.each do |k,v|
+#     if contains_letters[]
+#   end
+#   return true
+# end
+
+# p anagram("frog", "bear")
