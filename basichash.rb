@@ -144,3 +144,20 @@
 # {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
 # {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 # ]
+
+def complete_data(posts, users)
+  user_id = 0
+  posts.each do |post|
+    user_id = post[:submitted_by]
+    user_name = users[user_id]
+    post[:submitted_by] = user_name
+  end
+  posts
+end
+
+p complete_data([
+    { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+    { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+    { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+    { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+  ], { 403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q." })

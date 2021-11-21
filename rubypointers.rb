@@ -256,21 +256,21 @@
 # Explanation: There is no common prefix among the input strings.
 # Note:
 
-# All given inputs are in lowercase letters a-z.
+# # All given inputs are in lowercase letters a-z.
 
-def common_prefix(array)
-  if array.length == 0
-    return ""
-  end
-  prefix = array[0]
-  i = 1
-  while i < array.length
-    while array[i].index(prefix) != 0
-      prefix = prefix.chop
-    end
-    i += 1
-  end
-  return prefix
-end
+# def common_prefix(array)
+#   if array.length == 0
+#     return ""
+#   end
+#   prefix = array[0]
+#   i = 1
+#   while i < array.length
+#     while array[i].index(prefix) != 0
+#       prefix = prefix.chop
+#     end
+#     i += 1
+#   end
+#   return prefix
+# end
 
-p common_prefix(["flower", "flow", "flight"])
+# p common_prefix(["flower", "flow", "flight"])
