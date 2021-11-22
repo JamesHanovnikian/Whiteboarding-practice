@@ -172,21 +172,35 @@
 # Input: “frog”, “bear”
 # Output: false
 
-# def anagram(string1, string2)
-#   contains_letters = {}
-#   i = 0
-#   while i < string1.length
-#     letter = string1[i]
-#     if contains_letters[letter] == nil
-#       contains_letters[letter] = 0
-#     end
-#     contains_letters[letter] += 1
-#     i += 1
-#   end
-#   contains_letters.each do |k,v|
-#     if contains_letters[]
-#   end
-#   return true
-# end
+def anagram(string1, string2)
+  position1 = 0
+  still_ok = true
+  while position1 < string1.length
+    position2 = 0
+    found = false
+  end
+end
 
-# p anagram("frog", "bear")
+p anagram("frog", "bear")
+
+# position1 = 0
+# still_ok = true
+# while position1 < first_word.length && still_ok
+#   position2 = 0
+#   found = false
+#   while position2 < letters_list.length && !found
+#     if first_word[position1] == letters_list[position2]
+#       found = true
+#     else
+#       position2 += 1
+#     end
+#   end
+#   if found
+#     letters_list[position2] = nil
+#   else
+#     still_ok = false
+#   end
+#   position1 += 1
+# end
+# still_ok
+# end
