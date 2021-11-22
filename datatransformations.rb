@@ -24,3 +24,19 @@
 # 'o' => 1,
 # 'u' => 1
 # }
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+# def flatten_hash(hash)
+#   newArray = []
+#   hash.each do |k, v|
+#     newArray << k
+#     newArray << v
+#   end
+#   newArray
+# end
+
+# p flatten_hash ({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
