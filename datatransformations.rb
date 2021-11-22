@@ -55,3 +55,38 @@
 # end
 
 # p flip_hash({ "a" => 1, "b" => 2, "c" => 3 })
+
+# You are given a hash in format #A, and you are to return the same data as a hash using format #B, as specified below:
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+# def etl(hash)
+#   new_hash = {}
+#   hash.each do |k, v|
+#     i = 0
+#     while i < v.length
+#       new_hash[v[i].downcase] =
+#         i += 1
+#     end
+#   end
+#   new_hash
+# end
+
+# p etl({
+#     1 => ["A", "E"],
+#     2 => ["D", "G"],
+#   })
