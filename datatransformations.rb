@@ -144,36 +144,36 @@
 # {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
 # {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}]
 
-def book_finder(books)
-  author_format = {}
+# def book_finder(books)
+#   author_format = {}
 
-  books.each do |book|
-    author_name = book[:author]
-    book_info_array = []
-    append_book_info = []
-    if author_format[author_name] == nil
-      book.delete(:author)
-      book_info_array << book
-      author_format[author_name] = book_info_array
-    else
-      book.delete(:author)
-      append_book_info = author_format[author_name]
-      append_book_info << book
-      author_format[author_name] = append_book_info
-    end
-  end
-  author_format
-end
+#   books.each do |book|
+#     author_name = book[:author]
+#     book_info_array = []
+#     append_book_info = []
+#     if author_format[author_name] == nil
+#       book.delete(:author)
+#       book_info_array << book
+#       author_format[author_name] = book_info_array
+#     else
+#       book.delete(:author)
+#       append_book_info = author_format[author_name]
+#       append_book_info << book
+#       author_format[author_name] = append_book_info
+#     end
+#   end
+#   author_format
+# end
 
-p book_finder([
-    { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
-    { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
-    { title: "1984", author: "George Orwell", year: 1949 },
-    { title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
-    { title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
-    { title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 },
-  ])
+# p book_finder([
+#     { title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+#     { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+#     { title: "1984", author: "George Orwell", year: 1949 },
+#     { title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+#     { title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+#     { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+#     { title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 },
+#   ])
 
 # return the data in this new author-centric format:
 
