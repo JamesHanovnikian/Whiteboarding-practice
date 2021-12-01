@@ -24,12 +24,31 @@
 // Output: [8, 4, 10, 198, -8]
 
 
-function double(array) {
-  let newArray = [];
-  array.forEach(num => {
-    newArray.push(num * 2);
-  });
-  return newArray;
-}
+// function double(array) {
+//   let newArray = [];
+//   array.forEach(num => {
+//     newArray.push(num * 2);
+//   });
+//   return newArray;
+// }
 
-console.log(double([4, 2, 5, 99, -4]));
+// console.log(double([4, 2, 5, 99, -4]));
+
+
+// Write a function that returns the greatest value from an array of numbers.
+
+// Input: [5, 17, -4, 20, 12]
+// Output: 20
+
+// function greatestValue(array) {
+//   let biggestNumber = array[0];
+//   array.forEach(number => {
+//     if (number > biggestNumber) {
+//       biggestNumber = number;
+//     }
+//   });
+//   return biggestNumber;
+// }
+
+// console.log(greatestValue([5, 17, -4, 20, 12]));
+
