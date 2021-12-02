@@ -52,3 +52,42 @@
 
 // console.log(greatestValue([5, 17, -4, 20, 12]));
 
+
+// Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+// Input: [1, 2, 3, 4]
+// Output: 24
+
+// Explanation: (1 x 2 x 3 x 4) = 24
+
+// function makeProduct(array) {
+//   let reduce = array.reduce(function multiply(total, num) {
+//     num * total;
+//   }, 1);
+//   return reduce;
+// }
+
+// console.log(makeProduct([1, 2, 3, 4]));
+
+// Input: [1, 2, 3, 4]
+// Output: 24
+
+// Explanation: (1 x 2 x 3 x 4) = 24
+
+
+// function findProduct(array) {
+//   let product = 1;
+//   array.forEach(num => {
+//     product = product * num;
+//   });
+//   return product;
+// }
+
+// console.log(findProduct([1, 2, 3, 4]));
+
+
+
+
+
+
+
