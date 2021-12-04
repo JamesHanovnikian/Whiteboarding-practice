@@ -553,15 +553,36 @@
 // Input: “abcdefghijklmnopqrstuvwxyz”
 // Output: false
 
-function showMoney(string) {
-  let letters = string.split(" ");
-  for (let index = 0; index < letters.length; index++) {
-    if (letters[index] === "$") {
-      return true;
-    }
+// function showMoney(string) {
+//   let letters = string.split(" ");
+//   for (let index = 0; index < letters.length; index++) {
+//     if (letters[index] === "$") {
+//       return true;
+//     }
 
+//   }
+//   return false;
+// }
+
+// console.log(showMoney("i hate $ but i love money i know i know im crazy"));
+
+// Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+// Input: “hello, how are your porcupines today?”
+// Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+function capitalize(char) {
+  let i = 0;
+  let letters = char.split(" ");
+  while (i < letters.length) {
+    if (i % 2) {
+
+    } else {
+      letters[i].toUpperCase();
+    }
+    i++;
   }
-  return false;
+  return letters.map();
 }
 
-console.log(showMoney("i hate $ but i love money i know i know im crazy"));
+console.log(capitalize("hello, how are your porcupines today?"));
