@@ -533,13 +533,35 @@
 // Input: [1, 2, 3, 4, 5]
 // Output: [5, 4, 3, 2, 1]
 
-function reverse(array) {
-  let newArray = [];
-  let i = array.length - 1;
-  while (i >= 0) {
-    newArray.push(array[i]);
-    i--;
+// function reverse(array) {
+//   let newArray = [];
+//   let i = array.length - 1;
+//   while (i >= 0) {
+//     newArray.push(array[i]);
+//     i--;
+//   }
+//   return newArray;
+// }
+// console.log(reverse([1, 2, 3, 4, 5]));
+
+
+// Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+// Input: “i hate $ but i love money i know i know im crazy”
+// Output: true
+
+// Input: “abcdefghijklmnopqrstuvwxyz”
+// Output: false
+
+function showMoney(string) {
+  let letters = string.split(" ");
+  for (let index = 0; index < letters.length; index++) {
+    if (letters[index] === "$") {
+      return true;
+    }
+
   }
-  return newArray;
+  return false;
 }
-console.log(reverse([1, 2, 3, 4, 5]));
+
+console.log(showMoney("i hate $ but i love money i know i know im crazy"));
