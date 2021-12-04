@@ -571,18 +571,19 @@
 // Input: “hello, how are your porcupines today?”
 // Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
-function capitalize(char) {
-  let i = 0;
-  let letters = char.split(" ");
-  while (i < letters.length) {
-    if (i % 2) {
+// function capitalize(char) {
+//   let newString = "";
+//   for (let index = 0; index < char.length; index++) {
+//     // let letter = char[index];
+//     // letter = letter.toUppercase();
+//     // console.log(letter);
+//     if (index % 2 === 0) {
+//       newString = newString + char[index]
+//     } else {
+//       newString = newString + char[index].toUpperCase();
+//     }
+//   }
+//   return newString;
+// }
 
-    } else {
-      letters[i].toUpperCase();
-    }
-    i++;
-  }
-  return letters.map();
-}
-
-console.log(capitalize("hello, how are your porcupines today?"));
+// console.log(capitalize("hello, how are your porcupines today?"));
