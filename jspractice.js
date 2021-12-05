@@ -639,4 +639,25 @@
 
 
 
+// Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+// Input: “popcorn is so cool isn’t it yeah i thought so”
+// Output: “so thought i yeah it isn’t cool so is popcorn”
+
+// function wordReverse(string) {
+//   let words = string.split(" ");
+//   let i = words.length - 1;
+//   let newString = "";
+//   while (i >= 0) {
+//     newString = newString + words[i] + " ";
+//     i--;
+//   }
+//   return newString;
+// }
+
+// console.log(wordReverse("popcorn is so cool isn’t it yeah i thought so"));
+
+
+
+
 
