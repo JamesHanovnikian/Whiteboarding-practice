@@ -587,3 +587,35 @@
 // }
 
 // console.log(capitalize("hello, how are your porcupines today?"));
+
+
+
+// Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+// Input: “abcdefghhijkkloooop”
+// Output: “h”
+
+
+// function duplicate(string) {
+//   let i = 1;
+//   let letters = string.split('');
+//   let x = 0;
+
+
+//   while (i < letters.length) {
+//     if (letters[i] === letters[x]) {
+//       return letters[i];
+//     }
+//     x++;
+//     i++;
+//   }
+// }
+// console.log(duplicate("abcdefghhijkkloooop"));
+
+
+
+
+
+
+
+
