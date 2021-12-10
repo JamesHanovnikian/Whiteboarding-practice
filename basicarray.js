@@ -85,6 +85,34 @@
 
 // console.log(findProduct([1, 2, 3, 4]));
 
+// Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+// Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+// Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+
+
+// Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
+
+// Input: [99, 101, 88, 4, 2000, 50]
+// Output: [99, 88, 4, 50]
+
+
+// function lessThanHundred(array) {
+//   let newArray = [];
+//   array.forEach(num => {
+//     if (num < 100) {
+//       newArray.push(num);
+//     }
+//   });
+//   return newArray;
+// }
+// console.log(lessThanHundred([99, 101, 88, 4, 2000, 50]));
+
+
+
+
+
 
 
 
