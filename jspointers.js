@@ -18,3 +18,23 @@
 //   return newArray;
 // }
 // console.log(arrayMesh(["a", "b", "c"], ["d", "e", "f", "g"]));
+
+
+
+function arrayMesh(array1) {
+  let i = 0;
+  let newArray = [];
+  while (i < array1.length) {
+    let j = 0;
+    while (j < array1.length) {
+      if (i !== j) {
+        newArray.push(array1[i] + array1[j]);
+      }
+      j++;
+    }
+    i++;
+  }
+  return newArray;
+}
+
+console.log(arrayMesh(["a", "b", "c", "d"]))
