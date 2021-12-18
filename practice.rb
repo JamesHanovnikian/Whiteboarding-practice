@@ -43,3 +43,50 @@
 # Example:
 # Input: [8, 23, 0, 44, 1980, 3]
 # Output: [8, 0, 3]
+
+#3
+# Write a function that accepts an array of numbers and returns true or false, depending on whether there is a pair of two numbers that add up to 10.
+
+# Examples:
+# Input: [2, 4, 6, 7]
+# Output: true (because 4 + 6 == 10)
+
+# Second Example:
+# Input: [1, 2, 3, 4]
+# Output: false (because there is no combination of two numbers that add up to 10)
+
+# #4
+# Write a function that accepts an array of numbers, and returns the largest product of any pair of numbers within a given array.
+
+# Example:
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63
+# Explanation: (This is -9 * -7)
+
+# #5
+# Write a function that accepts two arrays of numbers, and returns the largest sum of a number from the first array added to a number from the second array.
+
+# Example:
+# Input: Two arrays: [5, 2, 1], [7, 8, 4, 1]
+# Output: 13
+# Explanation: (5 from the first array + 8 from the second array)
+
+# def largest_sum(array1, array2)
+#   i = 0
+#   largest_sum = array1[0] + array2[0]
+#   sum = 0
+#   while i < array1.length
+#     j = 0
+#     while j < array2.length
+#       if i != j
+#         sum = array1[i] + array2[j]
+#         if sum > largest_sum
+#           largest_sum = sum
+#         end
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   largest_sum
+# end
