@@ -117,42 +117,44 @@
 // [90, 20, 70, 100, 30, 80, 10]
 
 
-function coolioArray(array) {
-  let equalHundred = false;
-  let times = array.length / 2;
-  let i = 0;
-  let start = 0;
-  let end = array.length - 1;
-  if (array.length % 2 === 0) {
-    while (i <= times) {
-      if (array[start] + array[end] === 100) {
-        equalHundred = true;
-      } else {
-        return false;
-      }
-      i++;
-      end--;
-      start++;
-    }
-  } else {
-    times = Math.floor(array.length / 2);
-    while (i <= times) {
-      if (array[start] + array[end] === 100) {
-        equalHundred = true;
-      } else {
-        return false;
-      }
-      if (array[times] === 100) {
-        equalHundred = true;
-      } else {
-        equalHundred = false;
-      }
-      i++;
-      end--;
-      start++;
-    }
-    console.log(array[times]);
-  }
-  return equalHundred;
-}
-console.log(coolioArray([1, 2, 3, 97, 98, 99]));
+// function coolioArray(array) {
+//   let equalHundred = false;
+//   let times = array.length / 2;
+//   let i = 0;
+//   let start = 0;
+//   let end = array.length - 1;
+//   if (array.length % 2 === 0) {
+//     while (i <= times) {
+//       if (array[start] + array[end] === 100) {
+//         equalHundred = true;
+//       } else {
+//         return false;
+//       }
+//       i++;
+//       end--;
+//       start++;
+//     }
+//   } else {
+//     times = Math.floor(array.length / 2);
+//     while (i <= times) {
+//       if (array[start] + array[end] === 100) {
+//         equalHundred = true;
+//       } else {
+//         return false;
+//       }
+//       if (array[times] === 100) {
+//         equalHundred = true;
+//       } else {
+//         equalHundred = false;
+//       }
+//       i++;
+//       end--;
+//       start++;
+//     }
+//     console.log(array[times]);
+//   }
+//   return equalHundred;
+// }
+// console.log(coolioArray([1, 2, 3, 97, 98, 99]));
+
+

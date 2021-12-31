@@ -90,3 +90,29 @@
 #   end
 #   largest_sum
 # end
+
+# Write a function that accepts two arrays of numbers, and returns an array that is the “intersection” of the two arrays, meaning an array of the numbers that are shared by the two original arrays.
+
+# Example: Two arrays: [5, 4, 3, 2, 1], [0, 2, 4, 6]
+# Output: [2, 4] (or [4, 2])
+# Explanation: 2 and 4 are the only values shared by both input arrays.
+
+# def intersection(array1, array2)
+#   new_array = []
+#   i = 0
+#   while i < array1.length
+#     j = 0
+#     while j < array2.length
+#       if i != j
+#         if array1[i] == array2[j]
+#           new_array << array1[i]
+#         end
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   new_array
+# end
+
+# p intersection(([5, 4, 3, 2, 1]), ([0, 2, 4, 6]))
