@@ -242,6 +242,14 @@
 # Input: ["volleyball", "basketball", "badminton"]
 # Output: 29
 
+# strings = ["volleyball", "basketball", "badminton"]
+
+# total_length = strings.reduce(0) do |total, string|
+#   string.length + total
+# end
+
+# p total_length
+
 # #14
 # Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
 # Example:
@@ -253,6 +261,18 @@
 # Example:
 # Input: [5, 10, 8, 3]
 # Output: 10
+
+# def greatest_num(array)
+#   biggest_num = array.reduce(array[0]) do |max, number|
+#     if number > max
+#       number
+#     else
+#       max
+#     end
+#   end
+# end
+
+# p greatest_num([5, 10, 8, 3])
 
 # More Map, Select, and Reduce
 
