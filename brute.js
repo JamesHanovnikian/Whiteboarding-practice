@@ -75,3 +75,120 @@
 // }
 
 // console.log(duplicateValues([5, 2, 9, 7, 2, 6]));
+
+// Write a function that returns the reverse of a given string.
+
+// Input: “abcde”
+// Output: “edcba”
+
+
+// function reverseString(string) {
+//   let i = 0;
+//   let newString = "";
+//   let char = "";
+//   while (i < string.length) {
+//     newString = string[i] + newString;
+//     i++;
+//   }
+//   return newString;
+// }
+// console.log(reverseString("hello"));
+
+
+// Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+// Input: “racecar”
+// Output: true
+
+// Input: “baloney”
+// Output: false
+
+
+// function palindrome(string) {
+//   let reversedString = "";
+//   let i = 0;
+//   while (i < string.length) {
+//     reversedString = string[i] + reversedString;
+//     i++;
+//   }
+//   if (reversedString === string) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(palindrome("baloney"));
+
+
+// Write a function that prints out every number from 1 to N, with the following exceptions:
+
+// If the number is divisible by 3, print out "FIZZ".
+// If the number is divisible by 5, print out "BUZZ".
+// If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
+
+// function fizzBuzz(n) {
+//   let count = 1;
+//   while (count <= n) {
+//     if (count % 3 === 0 && count % 5 === 0) {
+//       console.log("FIZZBUZZ");
+//     } else if (count % 5 === 0) {
+//       console.log("BUZZ");
+//     } else if (count % 3 === 0) {
+//       console.log("FIZZ");
+//     } else {
+//       console.log(count);
+//     }
+//     count++;
+//   }
+// }
+
+// console.log(fizzBuzz(15));
+
+
+// Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Examples:
+
+// s = "leetcode"
+// return 0.
+// (The "l" is the first character that only appears once in the string, and appears at index 0.)
+
+// s = "loveleetcode",
+// return 2.
+// (The "l" and "o" are repeated, so the first non-repeating character is the "v", which is at index 2.)
+
+// Make an empty object variable.
+// Loop through the string
+//  On each iteration check to see if 
+// give the object key of that iteration and value of its index. 
+// if the key already exists in the object
+
+// function nonReapeatingChar(string) {
+//   let i = 0;
+//   let indexTracker = {};
+//   let letter = "";
+//   while (i < string.length) {
+//     letter = string[i];
+//     if (indexTracker[letter] === undefined) {
+//       indexTracker[letter] = i;
+//     } else {
+//       indexTracker[letter] = "repeat";
+//     }
+//     i++;
+//   }
+
+//   for (let key in indexTracker) {
+//     if (indexTracker[key] !== "repeat") {
+//       return indexTracker[key];
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(nonReapeatingChar("lloopp"));
+
+
+
