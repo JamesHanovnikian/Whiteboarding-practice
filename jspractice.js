@@ -655,7 +655,153 @@
 //   return newString;
 // }
 
-// console.log(wordReverse("popcorn is so cool isn’t it yeah i thought so"));
+// console.log(wordReverse("popcorn is so cool isn’t it yeah i thought so"))
+
+
+// # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
+
+
+// let people = { firstName: "James", lastName: "Hanovnikian", email: "jhanov@gmail.com" };
+
+
+// let i = 0;
+// console.log(people["firstName"]);
+// console.log(people["lastName"]);
+// console.log(people["email"]);
+
+
+
+// # 2. Make an array of hashes to store the first name and last name for 3 different people.Then print out the first person's info.
+
+
+// let array = [{ name: "James", lastName: "Cheese" }, { name: "Steve", lastName: "Brie" }, { name: "Ron", lastName: "Havarti" }];
+
+// console.log(array[0]);
+
+
+// # 3. Make a hash to store prices for 3 different menu items.Then add a new menu item and price and print the hash to see the result.
+
+
+
+//   # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
+
+// # 5. Make an array of hashes to store the title and author for 3 different books.Then print out the third book's author.
+
+// # 6. Make a hash to store 3 different states and their captitals.Then add a new state and capital and print the hash to see the result.
+
+//   # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+// # 8. Make an array of hashes to store the brand and model for 3 different laptops.Then print out the second laptop's model.
+
+// # 9. Make a hash to store definitions for 2 different words.Then add a new word and definition and print the hash to see the result.
+
+// let hash = { word1: "hello", word2: "world" };
+
+// hash["word3"] = "!";
+// console.log(hash);
+
+//   # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+// #1
+// Write a function that accepts an array of numbers, and returns an array of the products of every pair of numbers from the array.
+
+// Example:
+// Input: [3, 4, 5, 6]
+
+// Output: [12, 15, 18, 20, 24, 30]
+// Explanation: (3 * 4, 3 * 5, 3 * 6, 4 * 5, 4 * 6, 5 * 6)
+
+
+// function productArray(array) {
+//   let newArray = [];
+//   let i = 0;
+//   let product = 1;
+//   while (i < array.length) {
+//     let j = 0;
+//     while (j < array.length) {
+//       if (i !== j) {
+//         product = array[j] * array[i];
+//         newArray.push(product);
+//       }
+//       j++;
+//     }
+//     i++;
+//   }
+//   return newArray;
+// }
+
+// console.log(productArray([3, 4, 5, 6]));
+
+// #2
+// Write a function that accepts two arrays of numbers, and returns an array of the products of every number from the first array multiplied by every number of the second array:
+// Example:
+// Input: Two arrays: [1, 2], [3, 4, 5]
+// Output: [3, 4, 5, 6, 8, 10]
+// Explanation: (1 * 3, 1 * 4, 1 * 5, 2 * 3, 2 * 4, 2 * 5)
+
+
+// function products(array1, array2) {
+//   let newArray = [];
+//   let i = 0;
+//   let product = 1;
+//   while (i < array1.length) {
+//     let j = 0;
+//     while (j < array2.length) {
+//       product = array1[i] * array2[j];
+//       newArray.push(product);
+//       j++;
+//     }
+//     i++;
+//   }
+//   return newArray;
+// }
+
+// console.log(products(([1, 2]), ([3, 4, 5])));
+
+
+// #3
+// Write a function that accepts an array of numbers and returns true or false, depending on whether there is a pair of two numbers that add up to 10.
+
+// Examples:
+// Input: [2, 4, 6, 7]
+// Output: true (because 4 + 6 == 10)
+
+// Second Example:
+// Input: [1, 2, 3, 4]
+// Output: false (because there is no combination of two numbers that add up to 10)
+
+// #4
+// Write a function that accepts an array of numbers, and returns the largest product of any pair of numbers within a given array.
+
+// Example:
+// Input: [5, -2, 1, -9, -7, 2, 6] 
+// Output: 63
+// Explanation: (This is -9 * -7)
+
+// #5
+// Write a function that accepts two arrays of numbers, and returns the largest sum of a number from the first array added to a number from the second array.
+
+// Example: 
+// Input: Two arrays: [5, 2, 1], [7, 8, 4, 1]
+// Output: 13
+// Explanation: (5 from the first array + 8 from the second array)
+
+// #6
+// Write a function that accepts two arrays of numbers, and returns an array that is the “intersection” of the two arrays, meaning an array of the numbers that are shared by the two original arrays.
+
+// Example: Two arrays: [5, 4, 3, 2, 1], [0, 2, 4, 6]
+// Output: [2, 4] (or [4, 2])
+// Explanation: 2 and 4 are the only values shared by both input arrays.
+
+// #7
+// Write a function that accepts an array of numbers, and returns the first duplicate value.
+
+// Example: [5, 7, 8, 9, 8, 2, 1]
+// Output: 8 (since there are two 8’s in the array)
+
+// Supply 
+
+
 
 
 
