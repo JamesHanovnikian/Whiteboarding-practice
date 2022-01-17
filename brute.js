@@ -190,5 +190,67 @@
 
 // console.log(nonReapeatingChar("lloopp"));
 
+// A given string contains all the letters from the alphabet except for one. Return the missing letter.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Input: “The quick brown box jumps over a lazy dog”
+// Output: “f”
+
+
+// This is the same exercise as Two Sum I, but you must now solve it in linear time.
+
+// Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+
+// Input: [2, 5, 3, 1, 0, 7, 11]
+// Output: [3, 7]
+
+// Input: [1, 2, 3, 4, 5]
+// Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
+
+
+// A given string contains all the letters from the alphabet except for one. Return the missing letter.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Input: “The quick brown box jumps over a lazy dog”
+// Output: “f”
+
+
+
+
+function missingLetter(string) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+  let i = 0;
+  let letters = string.split(" ").join("");
+  while (i < alphabet.length) {
+    let alphaLetter = alphabet[i].toLowerCase();
+    let contains = letters.includes(alphaLetter);
+    if (contains === true) {
+
+    } else {
+      return alphaLetter;
+    }
+    i++;
+  }
+}
+
+console.log(missingLetter("The quick brown box jumps over a lazy dog"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
