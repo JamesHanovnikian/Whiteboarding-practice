@@ -219,23 +219,31 @@
 
 
 
-function missingLetter(string) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  let i = 0;
-  let letters = string.split(" ").join("");
-  while (i < alphabet.length) {
-    let alphaLetter = alphabet[i].toLowerCase();
-    let contains = letters.includes(alphaLetter);
-    if (contains === true) {
+// function missingLetter(string) {
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+//   let i = 0;
+//   let checker = {};
+//   let letters = string.split(" ").join("");
+//   let letter = "g";
+//   while (i < letters.length) {
+//     letter = letters[i].toLowerCase();
+//     if (checker[letter] === undefined) {
+//       checker[letter] = "true";
+//     }
+//     i++;
+//   }
+//   let j = 0;
+//   while (j < alphabet.length) {
+//     if (checker[alphabet[j]] !== "true") {
+//       return alphabet[j];
+//     }
+//     j++;
+//   }
+// }
 
-    } else {
-      return alphaLetter;
-    }
-    i++;
-  }
-}
 
-console.log(missingLetter("The quick brown box jumps over a lazy dog"));
+
+// console.log(missingLetter("The quick brown box jumps over a lazy dog"));
 
 
 
