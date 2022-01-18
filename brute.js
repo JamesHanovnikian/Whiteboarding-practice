@@ -245,11 +245,91 @@
 
 // console.log(missingLetter("The quick brown box jumps over a lazy dog"));
 
+// Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Examples:
+
+// s = "leetcode"
+// return 0.
+// (The "l" is the first character that only appears once in the string, and appears at index 0.)
+
+// s = "loveleetcode",
+// return 2.
+// (The "l" and "o" are repeated, so the first non-repeating character is the "v", which is at index 2.)
+
+// Note: You may assume the string contain only lowercase letters.
+
+
+// function firstUnique(string) {
+
+// }
+
+// console.log(firstUnique("leetcode"));
+
+
+// Given a DNA strand, return its RNA complement (per RNA transcription).
+
+// Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+// Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+// G becomes C
+// C becomes G
+// T becomes A
+// A becomes U
+
+// So based on all this, here's a sample input/output:
+
+// Input: 'ACGTGGTCTTAA'
+// Output: 'UGCACCAGAAUU'
+
+
+// Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+// Do not use any built-in sort methods.
+
+// Input: “silent”, “listen”
+// Output: true
+
+// Input: “frog”, “bear”
+// Output: false
+
+// create an empty object 
+// Variable to hold output. boolean. 
+// Loop through the first string and make key of letter, value of "checked"
+// Loop through the second string and look through each letter in the checked object 
+// If it is in the checker object --> output stays true else output is false. 
 
 
 
+// function anagram(string1, string2) {
+//   let checker = {};
+//   let output = false;
+//   let i = 0;
+//   while (i < string1.length) {
+//     let letter = string1[i];
+//     if (checker[letter] === undefined) {
+//       checker[letter] = "checked";
+//     }
+//     i++;
+//   }
+//   let j = 0;
+//   while (j < string2.length) {
+//     let letter2 = string2[j];
+//     if (checker[letter2] === "checked") {
+//       output = true;
+//     } else {
+//       output = false;
+//       return output;
+//     }
+//     j++;
+//   }
+//   return output;
+// }
 
-
+// console.log(anagram("remember", "rememberd"));
 
 
 

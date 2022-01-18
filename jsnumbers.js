@@ -162,3 +162,37 @@
 // }
 
 // console.log(palindromicNumber());
+
+
+// Write a function that gives the Nth number of the Fibonacci Sequence. The Fibonacci sequence begins with 0 and 1, and every number thereafter is the sum of the previous two numbers. So the sequence goes like this:
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, and so on until infinity...
+
+// 0, 1, 1, 2, 3 , 5 
+//    x  y
+
+
+
+// Input: 9
+// Output: 21 (as this is the 9th number of the Fibonacci Sequence)
+
+// function fibonacci(n) {
+//   let x = 0;
+//   let y = 1;
+//   let z = 1;
+//   let count = 3;
+//   while (count <= n) {
+//     z = x + y;
+//     x = y;
+//     y = z;
+//     count++;
+//   }
+//   return z;
+// }
+
+
+// console.log(fibonacci(9));
+
+// x = 0, y = 1, z = 1 count = 0 
+// z = 1, x = 1, y = 1 count = 1
+// 
