@@ -329,7 +329,58 @@
 //   return output;
 // }
 
-// console.log(anagram("remember", "rememberd"));
+// console.log(anagram("remember", "remember222d"));
+
+
+// Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Examples:
+
+// s = "leetcode"
+
+
+
+// return 0.
+// (The "l" is the first character that only appears once in the string, and appears at index 0.)
+
+// s = "loveleetcode",
+// return 2.
+// (The "l" and "o" are repeated, so the first non-repeating character is the "v", which is at index 2.)
+
+
+// return the index.
+// outer loop keeps track of first letter
+// inner loop compares current letter with first letter
+// if it is not the same keep going in the loop, if it is the same break the loop.
+// if j is equal to string.length - 1
+// return the index from outer loop.
+
+
+function uniqueLetter(string) {
+  let i = 0;
+  while (i < string.length) {
+    let j = 0;
+    while (j < string.length) {
+      if (i !== j) {
+        if (string[i] === string[j]) {
+          break;
+        }
+      }
+      j++;
+      if (j === string.length - 1) {
+        return i;
+      }
+    }
+    i++;
+  }
+}
+
+
+console.log(uniqueLetter("loveleetcode"));
+
+
 
 
 

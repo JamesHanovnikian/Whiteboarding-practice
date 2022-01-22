@@ -472,6 +472,26 @@
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
 
+# array = [1, 8, 3, 10]
+
+# i = 0
+# highest_sum = 1
+# while i < array.length
+#   j = 0
+#   while j < array.length
+#     if i != j
+#       sum = array[i] + array[j]
+#       if sum > highest_sum
+#         highest_sum = sum
+#       end
+#     end
+#     j += 1
+#   end
+#   i += 1
+# end
+
+# p highest_sum
+
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
@@ -498,3 +518,20 @@
 
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+# array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+
+# string = ""
+
+# i = 0
+# while i < array.length
+#   subarray = array[i]
+#   j = 0
+#   while j < subarray.length
+#     string = string + subarray[j]
+#     j += 1
+#   end
+#   i += 1
+# end
+
+# p string
