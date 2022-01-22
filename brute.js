@@ -341,6 +341,35 @@
 // s = "leetcode"
 
 
+// { "l": 1, "e": 2, }
+
+// make an empty object / hash map with variable of letterFrequency
+// loop through the string and make key of letter and value of number of times its
+// if letterFrequency[string[i]] === 1, return current index.
+
+
+// function uniqueLetter(string) {
+//   let letterFrequency = {};
+//   let i = 0;
+//   while (i < string.length) {
+//     let letter = string[i];
+//     if (letterFrequency[letter] === undefined) {
+//       letterFrequency[letter] = 0;
+//     }
+//     letterFrequency[letter] += 1;
+//     i++;
+//   }
+//   let j = 0;
+//   while (j < string.length) {
+//     let letter = string[j];
+//     if (letterFrequency[letter] === 1) {
+//       return j;
+//     }
+//     j++;
+//   }
+// }
+
+// console.log(uniqueLetter("loveleetcode"));
 
 // return 0.
 // (The "l" is the first character that only appears once in the string, and appears at index 0.)
@@ -348,6 +377,9 @@
 // s = "loveleetcode",
 // return 2.
 // (The "l" and "o" are repeated, so the first non-repeating character is the "v", which is at index 2.)
+
+
+
 
 
 // return the index.
@@ -358,27 +390,38 @@
 // return the index from outer loop.
 
 
-function uniqueLetter(string) {
-  let i = 0;
-  while (i < string.length) {
-    let j = 0;
-    while (j < string.length) {
-      if (i !== j) {
-        if (string[i] === string[j]) {
-          break;
-        }
-      }
-      j++;
-      if (j === string.length - 1) {
-        return i;
-      }
-    }
-    i++;
-  }
-}
+// function uniqueLetter(string) {
+//   let i = 0;
+//   while (i < string.length) {
+//     let j = 0;
+//     while (j < string.length) {
+//       if (i !== j) {
+//         if (string[i] === string[j]) {
+//           break;
+//         }
+//       }
+//       j++;
+//       if (j === string.length - 1) {
+//         return i;
+//       }
+//     }
+//     i++;
+//   }
+// }
 
 
-console.log(uniqueLetter("loveleetcode"));
+// console.log(uniqueLetter("loveleetcode"));
+
+
+
+// Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Examples:
+
+// s = "leetcode"
+
 
 
 
