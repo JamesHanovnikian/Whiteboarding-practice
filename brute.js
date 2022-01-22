@@ -424,6 +424,48 @@
 
 
 
+// This is the same exercise as Two Sum I, but you must now solve it in linear time.
+
+// Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+
+// Input: [2, 5, 3, 1, 0, 7, 11]
+// Output: [3, 7]
+
+// Input: [1, 2, 3, 4, 5]
+// Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
+
+
+// make a variable to hold empty array for output 
+// outer loop to hold one number in the array
+// inner loop to check first num + every other number in the array
+// see if it adds up to 10 
+// if it addds to 10 push the two numbers into the output array. 
+// break the loop. 
+
+
+
+// function twoSum(array) {
+//   let output = [];
+//   let i = 0;
+//   while (i < array.length) {
+//     let j = 0;
+//     while (j < array.length) {
+//       if (i !== j) {
+//         let sum = array[i] + array[j];
+//         if (sum === 10) {
+//           output.push(array[i]);
+//           output.push(array[j]);
+//           return output;
+//         }
+//       }
+//       j++;
+//     }
+//     i++;
+//   }
+//   return false;
+// }
+
+// console.log(twoSum([1, 2, 3, 4, 5]));
 
 
 
