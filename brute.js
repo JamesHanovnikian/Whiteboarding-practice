@@ -468,6 +468,39 @@
 // console.log(twoSum([1, 2, 3, 4, 5]));
 
 
+// function twoSum(array) {
+//   let checked = {};
+//   let output = [];
+//   let i = 0;
+//   while (i < array.length) {
+//     let num = array[i];
+//     let diff = 10 - num;
+//     if (checked[diff]) {
+//       output.push(checked[diff]);
+//       output.push(i);
+//       return output;
+//     } else {
+//       checked[num] = i;
+//     }
+//     i++;
+//   }
+//   return false;
+// }
+
+// console.log(twoSum([2, 5, 3, 1, 0, 7, 11]));
+
+
+
+
+// make empty object checked
+// create variable empty array for output. 
+// loop through each number in array
+// let diff = 10 - array[i];
+// if checked[diff], push array[i] & diff to the output array
+// else checked[array[i]] = i;
+
+
+
 
 
 
