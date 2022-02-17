@@ -113,22 +113,21 @@
 def biggest_profit(array)
   profit = 0
   biggest_profit = 0
+  min_price = array[0]
+  max_price = array[0]
   i = 0
 
   while i < array.length
-    j = 0
-    while j < array.length
-      if j > i
-        profit = array[i] - array[j]
-        if profit > biggest_profit
-          biggest_profit = profit
-        end
-      end
-      j += 1
+    if array[i] < min_price
+      min_price = array[i]
+    end
+    profit = array[i] - min_price
+    if profit > biggest_profit
+      biggest_profit = profit
     end
     i += 1
   end
   biggest_profit
 end
 
-p biggest_profit([7, 6, 4, 3, 2, 1])
+p biggest_profit([7, 1, 5, 3, 6, 4])
