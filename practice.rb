@@ -535,3 +535,213 @@
 # end
 
 # p string
+
+# #9
+# Write a function that accepts an array of strings and returns an array with only the strings that don't start with the letter "b".
+# Example:
+# Input: ["big", "little", "good", "bad"]
+# Output: ["little", "good"]
+
+# def words(array)
+#   new_array = []
+#   array.each do |word|
+#     if word[0] != "b"
+#       new_array << word
+#     end
+#   end
+#   new_array
+# end
+
+# p words(["big", "little", "good", "bad"])
+
+# #10
+# Write a function that accepts an array of numbers and returns an array with only the odd numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [5, 1, 9, 7]
+
+# def odd_numbers(array)
+#   odd_numbers = []
+#   array.each do |num|
+#     if num % 2 == 0
+#       p "h"
+#     else
+#       odd_numbers << num
+#     end
+#   end
+#   odd_numbers
+# end
+
+# p odd_numbers([2, 4, 5, 1, 8, 9, 7])
+
+# #11
+# Write a function that accepts an array of numbers and returns the sum of all the numbers.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 26
+
+# def sum_array(array)
+#   sum = 0
+#   array.each do |num|
+#     sum = sum + num
+#   end
+#   sum
+# end
+
+# p sum_array ([5, 10, 8, 3])
+
+# #12
+# Write a function that accepts an array of numbers and returns the smallest number.
+# Example:
+# Input: [5, 3, 8, 10]
+# Output: 3
+
+# def smallest_num(array)
+#   lowest_num = array[0]
+#   array.each do |num|
+#     if num < lowest_num
+#       lowest_num = num
+#     end
+#   end
+#   lowest_num
+# end
+
+# p smallest_num([5, 3, 8, 10])
+
+# #13
+# Write a function that accepts an array of strings and returns the total length of all the strings.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: 29
+
+# #14
+# Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: "volleyball-basketball-badminton"
+
+# #15
+# Write a function that accepts an array of numbers and returns the greatest number.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 10
+
+# Nested Loops
+# (Note that some of these can be solved with more clever solutions, but first try a “brute force” approach using nested loops.)
+
+# #1
+# Write a function that accepts an array of numbers, and returns an array of the products of every pair of numbers from the array.
+
+# Example:
+# Input: [3, 4, 5, 6]
+# Output: [12, 15, 18, 20, 24, 30]
+# Explanation: (3 * 4, 3 * 5, 3 * 6, 4 * 5, 4 * 6, 5 * 6)
+
+# Here's an array of strings, with each string representing a vote for a particular political candidate.
+# ["Gutierrez", "Johnson", "Johnson", "Johnson", "Gutierrez", "Johnson, "Gutierrez"]
+# Write a function that returns a hash table containing the tally of votes for each candidate.
+# Expected Output: {"Gutierrez": 3, "Johnson": 4}
+
+# def votes(strings)
+#   hash_table = {}
+#   i = 0
+#   while i < strings.length
+#     name = strings[i]
+#     if hash_table[name] == nil
+#       hash_table[name] = 0
+#     end
+#     hash_table[name] += 1
+#     i += 1
+#   end
+#   p hash_table
+#   return hash_table
+# end
+
+# #14
+# Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: "volleyball-basketball-badminton"
+
+# #15
+# Write a function that accepts an array of numbers and returns the greatest number.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 10
+
+# Nested Loops
+# (Note that some of these can be solved with more clever solutions, but first try a “brute force” approach using nested loops.)
+
+# #1
+# Write a function that accepts an array of numbers, and returns an array of the products of every pair of numbers from the array.
+
+# Example:
+# Input: [3, 4, 5, 6]
+# Output: [12, 15, 18, 20, 24, 30]
+# Explanation: (3 * 4, 3 * 5, 3 * 6, 4 * 5, 4 * 6, 5 * 6)
+
+# #2
+# Write a function that accepts two arrays of numbers, and returns an array of the products of every number from the first array multiplied by every number of the second array:
+# Example:
+# Input: Two arrays: [1, 2], [3, 4, 5]
+# Output: [3, 4, 5, 6, 8, 10]
+# Explanation: (1 * 3, 1 * 4, 1 * 5, 2 * 3, 2 * 4, 2 * 5)
+
+# def products(array1, array2)
+#   i = 0
+#   new_array = []
+#   products = 1
+#   while i < array1.length
+#     j = 0
+#     while j < array2.length
+#       products = array1[i] * array2[j]
+#       new_array << products
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   new_array
+# end
+
+# p products(([1, 2]), ([3, 4, 5]))
+
+# #3
+# Write a function that accepts an array of numbers and returns true or false, depending on whether there is a pair of two numbers that add up to 10.
+
+# Examples:
+# Input: [2, 4, 6, 7]
+# Output: true (because 4 + 6 == 10)
+
+# Second Example:
+# Input: [1, 2, 3, 4]
+# Output: false (because there is no combination of two numbers that add up to 10)
+
+# #4
+# Write a function that accepts an array of numbers, and returns the largest product of any pair of numbers within a given array.
+
+# Example:
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63
+# Explanation: (This is -9 * -7)
+
+# def product(array)
+#   highest_product = array[0] * array[1]
+#   product = 1
+#   i = 0
+#   while i < array.length
+#     j = 0
+#     while j < array.length
+#       if i != j
+#         product = array[i] * array[j]
+#         if product > highest_product
+#           highest_product = product
+#         end
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   highest_product
+# end
+
+# p product([5, -2, 1, -9, -7, 2, 6])
