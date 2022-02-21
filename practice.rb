@@ -745,3 +745,66 @@
 # end
 
 # p product([5, -2, 1, -9, -7, 2, 6])
+
+# Hashes
+# (In these exercises, hashes are referred to as hash tables. In Ruby, they’re simply called hashes, and in JavaScript, they’re known as objects.
+
+# #1
+# The following hash table represents a particular person: { firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.com" }
+# Write a function that accepts this type of hash table and returns the person's email address.
+
+# def find_email(hash)
+#   hash[:email]
+# end
+
+# p find_email({ firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.com" })
+
+# Example:
+# Input: { firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.com" }
+# Output: "ada.lovelace@email.com"
+
+# #2
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 }
+# Write a function that accepts a hash table like this and adds 200 shirts to the "yellow" category. The function can then return the updated hash table.
+
+# def shirts(hash)
+#   hash[:yellow] = hash[:yellow] + 200
+#   hash
+# end
+
+# p shirts({ red: 500, blue: 615, green: 484, yellow: 332 })
+
+# #3
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts 3 parameters: The hash table, a string representing a brand new color, and a number of how many new color shirts there are. The function should then add this color and its number to the hash table, and then return the updated hash table.
+
+# #4
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts a hash table like this and returns the total number of shirts in inventory.
+
+# def total_shirts(hash)
+#   total = 0
+#   hash.each do |k, v|
+#     total = total + v
+#   end
+#   total
+# end
+
+# p total_shirts({ red: 500, blue: 615, green: 484, yellow: 332 })
+
+# # #5
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts a hash table like this and returns the shirt color with the greatest number.
+
+# def most_shirts(hash)
+#   most_shirts = 0
+#   hash.each do |k, v|
+#     if v > most_shirts
+#       most_shirts = v
+#     end
+#   end
+#   return hash.key(most_shirts)
+# end
+
+# p most_shirts({ red: 500, blue: 615, green: 484, yellow: 332 })
+1

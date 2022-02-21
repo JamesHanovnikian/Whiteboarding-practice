@@ -110,24 +110,65 @@
 # Output: 0
 # Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
 
-def biggest_profit(array)
-  profit = 0
-  biggest_profit = 0
-  min_price = array[0]
-  max_price = array[0]
-  i = 0
+# def biggest_profit(array)
+#   profit = 0
+#   biggest_profit = 0
+#   min_price = array[0]
+#   max_price = array[0]
+#   i = 0
 
-  while i < array.length
-    if array[i] < min_price
-      min_price = array[i]
-    end
-    profit = array[i] - min_price
-    if profit > biggest_profit
-      biggest_profit = profit
-    end
-    i += 1
-  end
-  biggest_profit
-end
+#   while i < array.length
+#     if array[i] < min_price
+#       min_price = array[i]
+#     end
+#     profit = array[i] - min_price
+#     if profit > biggest_profit
+#       biggest_profit = profit
+#     end
+#     i += 1
+#   end
+#   biggest_profit
+# end
 
-p biggest_profit([7, 1, 5, 3, 6, 4])
+# def stock_profit(prices)
+#   i = 0
+#   total_profit = 0
+#   j = i + 1
+#   while j < prices.length
+#     if prices[j] > prices[i]
+#       profit = prices[j] - prices[i]
+#       total_profit = profit + total_profit
+#     end
+#     j += 1
+#     i += 1
+#   end
+#   total_profit
+# end
+
+# p stock_profit([7, 1, 5, 3, 6, 4])
+
+# p biggest_profit([1, 2, 3, 4, 5])
+
+# #1
+# The following hash table represents a particular person: { firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.com" }
+# Write a function that accepts this type of hash table and returns the person's email address.
+
+# Example:
+# Input: { firstName: "Ada", lastName: "Lovelace", email: "ada.lovelace@email.com" }
+# Output: "ada.lovelace@email.com"
+
+# #2
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 }
+# Write a function that accepts a hash table like this and adds 200 shirts to the "yellow" category. The function can then return the updated hash table.
+
+# #3
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts 3 parameters: The hash table, a string representing a brand new color, and a number of how many new color shirts there are. The function should then add this color and its number to the hash table, and then return the updated hash table.
+
+# #4
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts a hash table like this and returns the total number of shirts in inventory.
+
+# #5
+# The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
+# Write a function that accepts a hash table like this and returns the shirt color with the greatest number.
