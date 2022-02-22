@@ -172,3 +172,16 @@
 # #5
 # The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
 # Write a function that accepts a hash table like this and returns the shirt color with the greatest number.
+
+def rotate(nums, k)
+  new_array = []
+  i = 0
+  while i < nums.length
+    number = nums[i]
+    new_array.insert((i + k) % nums.length, number)
+    i += 1
+  end
+  new_array.compact
+end
+
+p rotate([1, 2, 3, 4, 5, 6, 7], 3)
