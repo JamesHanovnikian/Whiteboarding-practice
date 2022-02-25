@@ -282,11 +282,23 @@
 # Input: [1, 2, 3]
 # Output: [8, 9, 10]
 
+# def increase(array)
+#   array.map { |num| num + 7 }
+# end
+
+# p increase([1, 2, 3])
+
 # #2
 # Write a function that accepts an array of strings and returns an array with each string's length.
 # Example:
 # Input: ["hello", "goodbye"]
 # Output: [5, 7]
+
+# def length(array)
+#   array.map { |string| string.length }
+# end
+
+# p length(["hello", "goodbye"])
 
 # def length(array)
 #   array.map do |string|
@@ -308,7 +320,7 @@
 
 # array.each do |k, v|
 #   hash[k] = v
-# end
+# ends
 
 # p hash
 
