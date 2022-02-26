@@ -331,6 +331,7 @@
 
 # hash = {}
 
+##
 # i = 0
 # array.each do |v|
 #   k = v[:id]
@@ -343,6 +344,7 @@
 
 # string = "bookkeeper"
 
+p "hello"
 # i = 0
 # letter_frequencies = {}
 # while i < string.length
