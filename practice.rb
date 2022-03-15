@@ -344,7 +344,6 @@
 
 # string = "bookkeeper"
 
-p "hello"
 # i = 0
 # letter_frequencies = {}
 # while i < string.length
@@ -473,6 +472,28 @@ p "hello"
 
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+# def product(array)
+#   i = 0
+#   product = 1
+#   highest_product = array[0] * array[1]
+#   while i < array.length
+#     j = 0
+#     while j < array.length
+#       if i != j
+#         product = array[i] * array[j]
+#         if product > highest_product
+#           highest_product = product
+#         end
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   highest_product
+# end
+
+# p product([5, -2, 1, -9, -7, 2, 6])
 
 #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
@@ -683,6 +704,18 @@ p "hello"
 # Input: [5, 10, 8, 3]
 # Output: 10
 
+# def greatest_num(array)
+#   highest_current = array[0]
+#   array.each do |num|
+#     if num > highest_current
+#       highest_current = num
+#     end
+#   end
+#   highest_current
+# end
+
+# p greatest_num ([5, 10, 8, 3])
+
 # Nested Loops
 # (Note that some of these can be solved with more clever solutions, but first try a “brute force” approach using nested loops.)
 
@@ -821,4 +854,93 @@ p "hello"
 # end
 
 # p most_shirts({ red: 500, blue: 615, green: 484, yellow: 332 })
-1
+
+# #5
+# Write a function that accepts an array of numbers and returns an array with each number converted into a string.
+# Example:
+# Input: [1, 2, 3]
+# Output: ["1", "2", "3"]
+
+# #6
+# Write a function that accepts an array of numbers and returns a new array with only the even numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [2, 4, 8]
+
+# #7
+# Write a function that accepts an array of strings and returns an array with only the strings shorter than 4 letters.
+# Example:
+# Input: ["a", "man", "a", "plan", "a", "canal", "panama"]
+# Output: ["a", "man", "a", "a"]
+
+# def a_man(array)
+#   new_array = []
+#   array.each do |string|
+#     if string.length < 4
+#       new_array << string
+#     end
+#   end
+#   new_array
+# end
+
+# p a_man(["a", "man", "a", "plan", "a", "canal", "panama"])
+
+# #8
+# Write a function that accepts an array of numbers and returns an array with only the numbers less than 10.
+# Example:
+# Input: [8, 23, 0, 44, 1980, 3]
+# Output: [8, 0, 3]
+
+# #9
+# Write a function that accepts an array of strings and returns an array with only the strings that don't start with the letter "b".
+# Example:
+# Input: ["big", "little", "good", "bad"]
+# Output: ["little", "good"]
+
+# #10
+# Write a function that accepts an array of numbers and returns an array with only the odd numbers.
+# Example:
+# Input: [2, 4, 5, 1, 8, 9, 7]
+# Output: [5, 1, 9, 7]
+
+# #11
+# Write a function that accepts an array of numbers and returns the sum of all the numbers.
+# Example:
+# Input: [5, 10, 8, 3]
+# Output: 26
+
+# def sum(array)
+#   array.reduce(0) { |sum, num| sum + num }
+# end
+
+# p sum ([5, 10, 8, 3])
+
+# #12e
+# Write a function that accepts an array of numbers and returns the smallest number.
+# Example:
+# Input: [5, 3, 8, 10]
+# Output: 3
+
+# #13
+# Write a function that accepts an array of strings and returns the total length of all the strings.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: 29
+
+# #14
+# Write a function that accepts an array of strings and returns a single string that combines all the individual strings separated by dashes.
+# Example:
+# Input: ["volleyball", "basketball", "badminton"]
+# Output: "volleyball-basketball-badminton"
+
+# def sports(array)
+#   string = array[0]
+#   i = 1
+#   while i < array.length
+#     string = string + "-" + array[i]
+#     i += 1
+#   end
+#   string
+# end
+
+# p sports(["volleyball", "basketball", "badminton"])

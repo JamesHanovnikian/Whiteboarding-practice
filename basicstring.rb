@@ -152,3 +152,19 @@
 # end
 
 # p reverse_order("popcorn is so cool isn’t it yeah i thought so")
+
+# def palindrome(word)
+#   start = word.length - 1
+#   new_string = ""
+#   while start >= 0
+#     new_string = new_string + word[start]
+#     start = start - 1
+#   end
+#   if new_string == word
+#     return true
+#   else
+#     return false
+#   end
+# end
+
+# p palindrome("mom")

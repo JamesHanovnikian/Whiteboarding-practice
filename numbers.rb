@@ -323,3 +323,33 @@
 # end
 
 # p add_ten(([2, 4, 6, 7]))
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+# def first_duplicate(string)
+#   x = 0
+#   y = 1
+#   while x < string.length
+#     if string[x] == string[y]
+#       return string[x]
+#       break
+#     end
+#     x += 1
+#     y += 1
+#   end
+# end
+
+# p first_duplicate ("abcdefghhijkkloooop")
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+
