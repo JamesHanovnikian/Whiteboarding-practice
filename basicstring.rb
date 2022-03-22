@@ -161,10 +161,70 @@
 #     start = start - 1
 #   end
 #   if new_string == word
-#     return true
-#   else
+#     return t
+#   elsew
 #     return false
 #   end
 # end
 
 # p palindrome("mom")
+
+# Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+# Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+# Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+# def combine(array1, array2)
+#   i = 0
+#   new_array = []
+#   while i < array1.length
+#     j = 0
+#     while j < array2.length
+#       new_array << array1[i] + array2[j]
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   new_array
+# end
+
+# Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+# def reverse_words(string)
+# end
+
+# p reverse_words("popcorn is so cool isn’t it yeah i thought so")
+
+# A given array has one pair of duplicate values. Return the first duplicate value.
+
+# NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+# Input: [5, 2, 9, 7, 2, 6]
+# Output: 2
+
+# A given array has one pair of duplicate values. Return the first duplicate value.
+
+# NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+# Input: [5, 2, 9, 7, 2, 6]
+# Output: 2
+
+# Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
+
+# Input: [99, 101, 88, 4, 2000, 50]
+# Output: [99, 88, 4, 50]
+
+# def smaller_numbers(array)
+#   new_array = []
+#   array.each do |num|
+#     if num < 100
+#       new_array << num
+#     end
+#   end
+#   new_array
+# end
+
+# p smaller_numbers([99, 101, 88, 4, 2000, 50])

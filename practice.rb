@@ -498,6 +498,23 @@
 #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 
+# def nested_loop(array)
+#   sum = 0
+#   i = 0
+#   while i < array.length
+#     j = 0
+#     current = array[i]
+#     while j < current.length
+#       sum = current[j] + sum
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   sum
+# end
+
+# p nested_loop([[1, 3], [8, 9], [2, 16]])
+
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
@@ -944,3 +961,41 @@
 # end
 
 # p sports(["volleyball", "basketball", "badminton"])
+
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+# def reverse_array(array)
+#   new_array = []
+#   i = array.length - 1
+#   while i >= 0
+#     new_array << array[i]
+#     i = i - 1
+#   end
+#   new_array
+# end
+
+# p reverse_array([1, 2, 3, 4, 5])
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+# def merged_arrays(array)
+#   i = 0
+#   new_array = []
+#   while i < array.length
+#     j = 0
+#     while j < array.length
+#       if i != j
+#         new_array << array[i] + array[j]
+#       end
+#       j += 1
+#     end
+#     i += 1
+#   end
+#   new_array
+# end
+
+# p merged_arrays(["a", "b", "c", "d"])
