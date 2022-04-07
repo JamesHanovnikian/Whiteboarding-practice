@@ -999,3 +999,143 @@
 # end
 
 # p merged_arrays(["a", "b", "c", "d"])
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def flip_hash(array)
+#   new_hash = {}
+#   array.each do |k, v|
+#     new_hash[v] = k
+#   end
+#   new_hash
+# end
+
+# p flip_hash({ "a" => 1, "b" => 2, "c" => 3 })
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+# def flat_array(hash)
+#   array = []
+#   hash.each do |k, v|
+#     array << k
+#     array << v
+#   end
+#   array
+# end
+
+# p flat_array ({ "a" => 1, "b" => 2, "c" => 3, "d" => 4 })
+
+# Input:
+
+# {
+# 1 => ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+# 2 => ["D", "G"],
+# 3 => ["B", "C", "M", "P"],
+# 4 => ["F", "H", "V", "W", "Y"],
+# 5 => ["K"],
+# 8 => ["J", "X"],
+# 10 => ["Q", "Z"]
+# }
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'b' => 3,
+# 'c' => 3,
+# 'd' => 2,
+# 'e' => 1,
+# 'f' => 4,
+# 'g' => 2,
+# 'h' => 4,
+# 'i' => 1,
+# 'j' => 8,
+# 'k' => 5,
+# 'l' => 1,
+# 'm' => 3,
+# 'n' => 1,
+# 'o' => 1,
+# 'p' => 3,
+# 'q' => 10,
+# 'r' => 1,
+# 's' => 1,
+# 't' => 1,
+# 'u' => 1,
+# 'v' => 4,
+# 'w' => 4,
+# 'x' => 8,
+# 'y' => 4,
+# 'z' => 10
+# }
+
+# Input:
+
+# {
+#   1 => ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+#   2 => ["D", "G"],
+#   3 => ["B", "C", "M", "P"],
+#   4 => ["F", "H", "V", "W", "Y"],
+#   5 => ["K"],
+#   8 => ["J", "X"],
+#   10 => ["Q", "Z"],
+# }
+
+# def etl(hash)
+#   new_hash = {}
+#   hash.each do |num, array|
+#     i = 0
+#     while i < array.length
+#       letter = array[i].downcase!
+#       new_hash[letter] = num
+#       i += 1
+#     end
+#   end
+#   new_hash
+# end
+
+# p etl ({
+#         1 => ["A", "E", "I", "O", "U", "L", "N", "R", "S", "T"],
+#         2 => ["D", "G"],
+#         3 => ["B", "C", "M", "P"],
+#         4 => ["F", "H", "V", "W", "Y"],
+#         5 => ["K"],
+#         8 => ["J", "X"],
+#         10 => ["Q", "Z"],
+#       })
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'b' => 3,
+# 'c' => 3,
+# 'd' => 2,
+# 'e' => 1,
+# 'f' => 4,
+# 'g' => 2,
+# 'h' => 4,
+# 'i' => 1,
+# 'j' => 8,
+# 'k' => 5,
+# 'l' => 1,
+# 'm' => 3,
+# 'n' => 1,
+# 'o' => 1,
+# 'p' => 3,
+# 'q' => 10,
+# 'r' => 1,
+# 's' => 1,
+# 't' => 1,
+# 'u' => 1,
+# 'v' => 4,
+# 'w' => 4,
+# 'x' => 8,
+# 'y' => 4,
+# 'z' => 10
+# }

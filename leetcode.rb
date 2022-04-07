@@ -173,15 +173,79 @@
 # The following hash table represents the inventory of shirts for a clothing store: { red: 500, blue: 615, green: 484, yellow: 332 } (same as previous exercise)
 # Write a function that accepts a hash table like this and returns the shirt color with the greatest number.
 
-def rotate(nums, k)
-  new_array = []
-  i = 0
-  while i < nums.length
-    number = nums[i]
-    new_array.insert((i + k) % nums.length, number)
-    i += 1
-  end
-  new_array.compact
-end
+# def rotate(nums, k)
+#   new_array = []
+#   i = 0
+#   while i < nums.length
+#     number = nums[i]
+#     new_array.insert((i + k) % nums.length, number)
+#     i += 1
+#   end
+#   new_array.compact
+# end
 
-p rotate([1, 2, 3, 4, 5, 6, 7], 3)
+# p rotate([1, 2, 3, 4, 5, 6, 7], 3)
+
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+# def multiples_sum(num)
+#   sum = 0
+#   num = num - 1
+#   while num >= 0
+#     if num % 3 == 0 || num % 5 == 0
+#       sum = sum + num
+#     end
+#     num = num - 1
+#   end
+#   sum
+# end
+
+# p multiples_sum(1000)
+
+# This is a demo task.
+
+# Write a function:
+
+# def solution(a)
+
+# that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
+
+# For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
+
+# Given A = [1, 2, 3], the function should return 4.
+
+# Given A = [−1, −3], the function should return 1.
+
+# Write an efficient algorithm for the following assumptions:
+
+# N is an integer within the range [1..100,000];
+# each element of array A is an integer within the range [−1,000,000..1,000,000].
+
+# def smallest_pos_integer(array)
+#   hash = {}
+#   i = 0
+#   if array.all?(&:negative?) == true
+#     return 1
+#   end
+
+#   while i < array.length
+#     num = array[i]
+#     if hash[num] == nil
+#       hash[num] = 0
+#     end
+#     hash[num] += 1
+#     i += 1
+#   end
+
+#   count = 1
+#   while count < 100000
+#     count += 1
+#     if hash[count] == nil
+#       return count
+#     end
+#   end
+# end
+
+# p smallest_pos_integer([1, 3, 6, 4, 1, 2])
