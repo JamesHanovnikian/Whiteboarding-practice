@@ -249,3 +249,24 @@
 # end
 
 # p smallest_pos_integer([1, 3, 6, 4, 1, 2])
+
+# def reverse_string(s)
+#   start = 0
+#   finish = s.length - 1
+#   while start <= finish
+#     s[start], s[finish] = s[finish], s[start]
+#     start += 1
+#     finish = finish - 1
+#     p start
+#     p finish
+#   end
+#   s
+# end
+
+# p reverse_string(["H", "e", "l"])
+
+# 1  start = 0 finish = 2
+# 2  start = 1 finish = 1
+# 3
+# 4
+# 5
