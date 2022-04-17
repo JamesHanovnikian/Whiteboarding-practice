@@ -270,3 +270,29 @@
 # 3
 # 4
 # 5
+
+def first_uniq_char(s)
+  checker = {}
+  i = 0
+  while i < s.length
+    current = s[i]
+    if checker[current] == nil
+      checker[current] = 0
+    end
+    checker[current] += 1
+    i += 1
+  end
+
+  j = 0
+  while j < s.length
+    search = s[j]
+    if checker[search] == 1
+      return j
+      break
+    end
+    j += 1
+  end
+  return -1
+end
+
+p first_uniq_char("loveleetcode")

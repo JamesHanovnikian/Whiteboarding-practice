@@ -228,3 +228,36 @@
 # end
 
 # p smaller_numbers([99, 101, 88, 4, 2000, 50])
+
+def is_anagram(s, t)
+  #     While loop through first input, and create a hash map through each time
+  #     i = 0
+  s_hash = {}
+  h_hash = {}
+  i = 0
+  while i < s.length
+    letter = s[i]
+    if s_hash[letter] == nil
+      s_hash[letter] = 0
+    end
+    s_hash[letter] += 1
+    i += 1
+  end
+  j = 0
+  while j < t.length
+    sec_letter = t[j]
+
+    if h_hash[sec_letter] == nil
+      h_hash[sec_letter] = 0
+    end
+    h_hash[sec_letter] += 1
+    j += 1
+  end
+  if s_hash == h_hash
+    return true
+  else
+    return false
+  end
+end
+
+p is_anagram("cat", "tac")
